@@ -80,42 +80,57 @@
     },
     "privateKey": "<private-key>",
     "database": {
-        "username": "<username>",
-        "password": "<password>",
-        "database": "<database>",
-        "host": "<host>",
-        "port": "<port>"
+        "username": "myuser",
+        "password": "mypassword",
+        "database": "mydatabase",
+        "host": "postgres",
+        "port": "5432"
     },
     "networks": {
-        "GOERLI": {
-            "chainId": 5,
+        "Sepolia": {
+            "chainId": 11155111,
             "tokens": {
                 "ETH": {
-                    "amount": 0.1,
+                    "amount": 0.0001,
                     "isNativeToken": true
                 },
-                "LINK": {
+                "USDC": {
                     "amount": 1,
-                    "address": "0x326C977E6efc84E512bB9C30f76E30c160eD06FB"
+                    "address": "<address>"
                 }
             },
-            "blockExplorer": "https://goerli.etherscan.io/tx/",
-            "nodeUri": "<node-uri>"
+            "blockExplorer": "https://sepolia.etherscan.io/tx/",
+            "nodeUri": "https://ethereum-sepolia.publicnode.com"
         },
-        "MUMBAI": {
-            "chainId": 80001,
+        "Sepolia Base": {
+            "chainId": 84532 ,
             "tokens": {
-                "MATIC": {
-                    "amount": 0.1,
+                "ETH": {
+                    "amount": 0.0001,
                     "isNativeToken": true
                 },
-                "LINK": {
+                "USDC": {
                     "amount": 1,
-                    "address": "0x326C977E6efc84E512bB9C30f76E30c160eD06FB"
+                    "address": "<address>"
                 }
             },
-            "blockExplorer": "https://mumbai.polygonscan.com/tx/",
-            "nodeUri": "<node-uri>"
+            "blockExplorer": "https://sepolia.basescan.org/tx/",
+            "nodeUri": "https://sepolia.base.org"
+        },
+        "Sepolia Arbitrum": {
+            "chainId": 421614,
+            "tokens": {
+                "ETH": {
+                    "amount": 0.0001,
+                    "isNativeToken": true
+                },
+                "USDC": {
+                    "amount": 1,
+                    "address": "<address>"
+                }
+            },
+            "blockExplorer": "https://sepolia.arbiscan.io/tx/",
+            "nodeUri": "https://arbitrum-sepolia.blockpi.network/v1/rpc/public"
         }
     },
     "requestCooldown": 24
