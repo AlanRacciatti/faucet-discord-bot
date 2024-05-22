@@ -23,6 +23,6 @@ ENV DB_USER=myuser
 ENV DB_PASS=mypassword
 ENV DB_NAME=mydatabase
 
-# Run the app
-CMD ["npm", "start"]
+# Run update:faucet script and then start the app
+CMD ["sh", "-c", "npm run update:faucet && npm start"]
 
